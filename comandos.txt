@@ -1,0 +1,44 @@
+# Treinar espanhol com BETO: (50 epocas com early stop de 3)
+
+python -m train_model --train data/ES-Spanish/es_train.conll --dev data/ES-Spanish/es_dev.conll --out_dir . --model_name ner_beto  --gpus 1 --epochs 50 --encoder_model dccuchile/bert-base-spanish-wwm-uncased --batch_size 64 --lr 0.0001
+
+# Avaliação BETO
+
+python -m evaluate --test data/ES-Spanish/es_dev.conll --out_dir . --gpus 1 --encoder_model dccuchile/bert-base-spanish-wwm-uncased --model ner_beto/lightning_logs/version_0/checkpoints/ner_beto_timestamp_1633513468.7099645_final.ckpt --prefix ner_beto_results
+
+
+# Treinar espanhol com xml-Roberta: (50 epocas com early stop de 3) -> BASELINE SITE
+
+python -m train_model --train data/ES-Spanish/es_train.conll --dev data/ES-Spanish//es_dev.conll --out_dir . --model_name xlmr_ner --gpus 1 --epochs 50 --encoder_model xlm-roberta-base --batch_size 64 --lr 0.0001
+
+# Avaliacao
+
+python -m evaluate --test data/ES-Spanish/es_dev.conll --out_dir . --gpus 1 --encoder_model xlm-roberta-base --model xlmr_ner/lightning_logs/version_0/checkpoints/xlmr_ner_timestamp_1633002757.1910515_final.ckpt --prefix xlmr_ner_results
+
+# Treinar espanhol com Barcelona - Roberta-base : (50 epocas com early stop de 3)
+
+python -m train_model --train data/ES-Spanish/es_train.conll --dev data/ES-Spanish/es_dev.conll --out_dir . --model_name ner_barcelona --gpus 1 --epochs 50 --encoder_model BSC-TeMU/roberta-base-bne --batch_size 64 --lr 0.0001
+
+# Avaliacao
+
+python -m evaluate --test data/ES-Spanish/es_dev.conll --out_dir . --gpus 1 --encoder_model BSC-TeMU/roberta-base-bne --model ner_barcelona/lightning_logs/version_0/checkpoints/xlmr_ner_barcelona_timestamp_1633004494.7314012_final.ckpt --prefix ner_barcelona_results
+
+# Treinar espanhol com Barcelona - Roberta-large : (50 epocas com early stop de 3)
+
+python -m train_model --train data/ES-Spanish/es_train.conll --dev data/ES-Spanish/es_dev.conll --out_dir . --model_name ner_barcelona_large --gpus 1 --epochs 50 --encoder_model BSC-TeMU/roberta-large-bne --batch_size 64 --lr 0.0001
+
+# Avaliacao
+
+python -m evaluate --test data/ES-Spanish/es_dev.conll --out_dir . --gpus 1 --encoder_model BSC-TeMU/roberta-large-bne --model ner_barcelona_large/lightning_logs/version_0/checkpoints/xlmr_ner_barcelona_timestamp_1633004494.7314012_final.ckpt --prefix ner_barcelona_large_results
+
+# Treinar espanhol com mBERT : (50 epocas com early stop de 3)
+
+python -m train_model --train data/ES-Spanish/es_train.conll --dev data/ES-Spanish/es_dev.conll --out_dir . --model_name mbert --gpus 1 --epochs 50 --encoder_model bert-base-multilingual-uncased --batch_size 64 --lr 0.0001
+
+# Avaliacao
+
+python -m evaluate --test data/ES-Spanish/es_dev.conll --encoder_model bert-base-multilingual-uncased --out_dir . --gpus 1 --model ./mbert/lightning_logs/version_0/checkpoints//mbert_timestamp_1633344061.132693_final.ckpt --prefix mbert_results
+
+
+
+
