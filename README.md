@@ -41,7 +41,7 @@ Stopped at epoch 8
  'micro@R': 0.773809552192688
  ```
 
-1. BETO
+2. BETO
 
 Stopped at epoch 4
 
@@ -76,7 +76,7 @@ Stopped at epoch 4
  'micro@R': 0.7636054158210754,
 ```
 
-1. BSC-TeMU/roberta-base-bne
+3. BSC-TeMU/roberta-base-bne
 
 ```
 Stopped at epoch 5
@@ -111,7 +111,7 @@ Stopped at epoch 5
  'micro@R': 0.7214650511741638
 ```
 
-1. bert-base-multilingual-uncased
+4. bert-base-multilingual-uncased
 
 Stopped at epoch 7
 
@@ -145,6 +145,15 @@ Stopped at epoch 7
  'micro@P': 0.7981574535369873,
  'micro@R': 0.8103741407394409
 ```
+
+-----------
+
+Nota:
+
+Con "BSC-TeMU/roberta-large-bne":
+
+
+RuntimeError: CUDA out of memory. Tried to allocate 44.00 MiB (GPU 0; 11.17 GiB total capacity; 10.00 GiB already allocated; 22.31 MiB free; 10.46 GiB reserved in total by PyTorch)
 
 -----------
 
