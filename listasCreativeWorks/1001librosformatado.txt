@@ -61,7 +61,8 @@ El monje
 Camila
 Jacques el fatalista
 La religiosa
-SIGLO XIXEl castillo de Rackrent
+SIGLO XIX
+El castillo de Rackrent
 Enrique de Ofterdingen
 El sobrino de Rameau
 Las afinidades electivas
@@ -97,7 +98,7 @@ El pozo y el péndulo
 Los tres mosqueteros
 Facundo
 La charca del diablo
-0100- El conde de Montecristo
+El conde de Montecristo
 Jane Eyre
 La feria de las vanidades
 Cumbres borrascosas
@@ -198,8 +199,8 @@ Effi Briest
 La máquina del tiempo
 La isla del doctor Moreau -H.G Wells
 Quo Vadis
-0200- Drácula
-0201- Lo que Maisie sabía
+Drácula
+Lo que Maisie sabía
 Misericordia
 Faraón
 Los alimentos terrenales
@@ -210,7 +211,8 @@ El despertar
 El Stechlin
 Las estrellas de Eger
 0211 -Some experiences of an Irish R.M
-SIGLO XXLos tigres de Mompracem
+SIGLO XX
+Los tigres de Mompracem
 Nuestra Carrie
 El teniente Gustl
 Kim
@@ -245,10 +247,10 @@ Impresiones de África
 El árbol de la ciencia
 Ethan Frome
 Castilla
-0247- The Charwoman's Daughter
+The Charwoman's Daughter
 La muerte en Venecia
 Hijos y amantes
-0250- Memorias de un hombre de acción
+Memorias de un hombre de acción
 Platero y yo
 Niebla
 Kokoro
